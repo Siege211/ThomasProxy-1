@@ -16,13 +16,14 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
     />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <!-- <link
       rel="stylesheet"
       type="text/css"
       href="http://localhost:3001/style.css"
     /> -->
 
-    <link
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="http://localhost:3003/styles.css"
@@ -31,7 +32,7 @@
       rel="stylesheet"
       type="text/css"
       href="http://localhost:3004/style.css"
-    />
+    /> -->
     <style>
       #ImageandProductWrapper {
         display: flex;
@@ -39,16 +40,24 @@
     </style>
   </head>
   <body>
+      <div id="nav">
+    
+      </div>
     <div id="ImageandProductWrapper">
-      <div id="ImageCarousel">Yo, Didn't Render</div>
+      <div class="ImageWrapper">
+        <div id="ImageCarousel">Yo, Didn't Render</div>
+      </div>
       <div id="ProductInfo">Yeah, Still Didn't</div>
     </div>
 
     <div id="RelatedItems">Almost</div>
-    <div id="Reviews">Sike</div>
+    <div class="reviewWrapper">
+      <div id="Reviews">Sike</div>
+    </div>
     <script src="http://localhost:3001/app.bundle.js"></script>
     <script src="http://localhost:3002/bundle.js"></script>
     <script src="http://localhost:3003/bundle.js"></script>
     <script src="http://localhost:3004/bundle.js"></script>
+    <script src="http://localhost:3005/bundle.js"></script>
   </body>
 </html>
