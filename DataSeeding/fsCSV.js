@@ -1,19 +1,17 @@
+// Major todo's: 
+// 1. change url generation to randomly select 1 from 
+  // a list of 1000 image urls
+
+
+
 const fs = require('fs');
 const path = require('path');
 const os = require('os');
 const faker = require('faker');
-    // output file in the same folder
 
 const filename = path.join(__dirname, 'output.csv');
 const finalCSV = fs.createWriteStream(filename);
 
-// const appendToFile = function() { 
-//   fs.writeFileSync(filename, output2.join(os.EOL), {'flag':'a'},  function(err) {
-//     if (err) {
-//         return console.error(err);
-//     }
-//   });
-// }
 
 
 const makeChunk = async function() {
