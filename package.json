@@ -1,5 +1,5 @@
 {
-  "name": "joon-proxy",
+  "name": "Thomas-proxy",
   "version": "1.0.0",
   "description": "proxy server to connect four modules",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "start": "nodemon ./server.js",
     "webpack": "webpack -d --watch",
     "makeDataSet": "node --max-old-space-size=4076 DataSeeding/fsCSV.js",
-    "Postgres": "explain analyze query"
+    "Postgres": "psql -c COPY rec_products name imageURL price FROM Siegel/desktop/proxy-Thomas/DataSeeding/output.csv WITH (FORMAT csv);"
   },
   "repository": {
     "type": "git",

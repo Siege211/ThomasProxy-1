@@ -27,3 +27,10 @@ dist/
 
 # Generated Data from faker
 DataSeeding/output1.csv
+DataSeeding.output1.csv
+DataSeeding/small.csv
+DataSeeding.small.csv
+DataSeeding/output.csv
+DataSeeding.output.csv
+DataSeeding/smallCSV.js
+DataSeeding.smallCSV.js
