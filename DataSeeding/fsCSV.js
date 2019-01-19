@@ -13,16 +13,17 @@ const filename1 = path.join(__dirname, 'output1.csv');
 const finalCSV1 = fs.createWriteStream(filename1);
 
 const makeChunk = async function(outputFile) {
-  //chunkOutput = [];
+  outputFile.write('id,name,imageURL,price\n');
   for (let i = 0; i < 1e7; i++) {
-     // const row = [];
-     let nameStr = 'name:' +faker.commerce.productName();
-     let imgStr = 'imageURL:' +faker.random.image();
-     let priceStr = 'price:' +faker.finance.amount();
-     let newLineStr = ';\n';
-     let row = nameStr+imgStr+priceStr+newLineStr;
+   
+    let id = ''+i+','
+    let nameStr = /*'name:' +*/faker.commerce.productName()+',';
+    let imgStr = /*'imageURL:' +*/faker.random.image()+',';
+    let priceStr = /*'price:' +*/faker.finance.amount();
+    let newLineStr = '\n';
+    let row = id+nameStr+imgStr+priceStr+newLineStr;
      //chunkOutput.push(row);
-     outputFile.write(row);
+    outputFile.write(row);
 
     if (i%1e5 === 0) {
       console.log(`${i}`)
