@@ -50,10 +50,12 @@
       <div id="ProductInfo">Yeah, Still Didn't</div>
     </div>
 
-    <div id="RelatedItems">Almost</div>
+    <div id="related">Almost</div>
     <div class="reviewWrapper">
       <div id="Reviews">Sike</div>
     </div>
+    <script src="./lib/react.development.js"></script>
+    <script src="./lib/react-dom.development.js"></script>
     <!--
       <script src="http://localhost:3001/app.bundle.js"></script>
       <script src="http://localhost:3002/bundle.js"></script>
@@ -61,5 +63,12 @@
       <script src="http://localhost:3004/bundle.js"></script>
       <script src="http://localhost:3005/bundle.js"></script>
     -->
+  <script src="http://localhost:9000/4/app.bundle.js"></script>
+  <script>
+      ReactDOM.render(
+        React.createElement(<App />),
+        document.getElementById('related')
+      );
+    </script>
   </body>
 </html>
