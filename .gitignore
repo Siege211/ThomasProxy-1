@@ -34,3 +34,5 @@ DataSeeding/output.csv
 DataSeeding.output.csv
 DataSeeding/smallCSV.js
 DataSeeding.smallCSV.js
+
+./newrelic.js
